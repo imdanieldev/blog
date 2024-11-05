@@ -1,0 +1,40 @@
+.content{
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(3 ,7 ,18);
+    color: white;
+    > *{
+        z-index: 20;
+    }
+    h1{
+        font-size: 8rem;
+        line-height: 1;
+    }
+    p{
+        font-size: 3rem;
+        line-height: 1;
+    }
+    a{
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+        margin-top: 20px;
+        background-color: rgb(3 ,7 ,18);
+        padding: 10px 15px;
+        border: 2px #a855f7 solid;
+    }
+}
+.effect{
+    background: linear-gradient(to top ,#a855f7 ,rgb(3,7,18));
+    position: fixed;
+    z-index: 10;
+    filter: blur(10rem);
+    opacity: 80;
+    height: 8rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}

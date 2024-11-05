@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+	<link rel="stylesheet" href="{{ get_url(path="all.css", trailing_slash=false) }}">
+	<link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) }}">
+	<meta name="theme-color" content="#030712">
+	<link rel="icon" type="image/png" href="https://www.imdanieldev.ir/icon.png">
+	<meta property="og:title" content="Daniel Web Dev Blog">
+	<meta name="description" content="This is my Blog">
+	<meta property="og:description" content="This is my Blog">
+</head>
+
+<body>
+	<div class="bg">
+		<div id="particles-js">
+		</div>
+	</div>
+	<section class="all">
+		<div class="content">
+			<div class="top">
+				<div class="menu">
+					<a href="{{ config.base_url }}">
+						<h1>{{ config.title }}</h1>
+					</a>
+				</div>
+				<div class="hr"></div>
+			</div>
+			{% block content %}
+			<div class="posts">
+				{% for page in section.pages | reverse %}
+				<div class="post">
+					<h2 class="post-title">
+						<a href="{{ page.permalink }}">
+							{{ page.title | safe }}
+						</a>
+					</h2>
+				</div>
+				{% endfor %}
+			</div>
+			{% endblock content %}
+		</div>
+	</section>
+	<script src="/par.min.js"></script>
+	<script src="/app.js"></script>
+</body>
+
+</html>

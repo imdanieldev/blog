@@ -1,0 +1,10 @@
+base_url = "http://localhost:1111"
+compile_sass = true
+theme = "mytheme"
+title = "وبلاگ دانیال"
+description = "این وبلاگ برای من است."
+build_search_index = true
+[markdown]
+highlight_code = true
+
+[extra]

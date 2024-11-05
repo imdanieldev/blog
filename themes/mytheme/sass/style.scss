@@ -1,0 +1,62 @@
+.bg{
+    position: fixed;
+    z-index: 10;
+    height: 100svh !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(3, 7, 18);
+}
+.all{
+    position: relative;
+    z-index: 20;
+    background-color: rgba($color: rgb(3,7,18), $alpha: 0.2);
+    backdrop-filter: blur(0.05rem);
+    min-height: 100svh;
+    width: 100%;
+    color: white;
+}
+.top{
+    .menu{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        background-color: rgba(3, 7, 18, 0.9);
+        a{
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .hr{
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right ,rgb(3,7,18), #a855f7, rgb(3,7,18));
+    }
+}
+.post-content{
+    padding: 1.5rem 3rem;
+    font-size: 18px;
+    .backbottom{
+        margin-top: 2rem;
+        background-color: rgb(3 ,7 ,18);
+        padding: 5px 15px;
+        border: 2px #a855f7 solid;
+    }
+}
+.posts{
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    .post{
+        background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+        padding: 0.5rem 01rem;
+        border-radius: 0.5rem;
+        .post-title{
+            font-size: 20px;
+        }
+    }
+}
