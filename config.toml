@@ -1,4 +1,4 @@
-base_url = "http://localhost:1111"
+base_url = "/"
 compile_sass = true
 theme = "mytheme"
 title = "وبلاگ دانیال"
