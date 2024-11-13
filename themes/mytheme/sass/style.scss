@@ -5,13 +5,19 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(3, 7, 18);
+    background-color: #000000;
+    background-image: url('/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0.2rem) grayscale(0) brightness(40%);
+}
+body{
+    background-color: #000000;
 }
 .all{
     position: relative;
     z-index: 20;
-    background-color: rgba($color: rgb(3,7,18), $alpha: 0.2);
-    backdrop-filter: blur(0.05rem);
     min-height: 100svh;
     width: 100%;
     color: white;
@@ -24,6 +30,7 @@
         align-items: center;
         padding: 15px 0;
         background-color: rgba(3, 7, 18, 0.9);
+        backdrop-filter: blur(1rem);
         a{
             h1{
                 font-size: 1.5rem;
@@ -33,7 +40,7 @@
     .hr{
         width: 100%;
         height: 2px;
-        background: linear-gradient(to right ,rgb(3,7,18), #a855f7, rgb(3,7,18));
+        background: linear-gradient(to right ,rgb(3,7,18), #207dd4, rgb(3,7,18));
     }
 }
 .post-content{
@@ -43,7 +50,7 @@
         margin-top: 2rem;
         background-color: rgb(3 ,7 ,18);
         padding: 5px 15px;
-        border: 2px #a855f7 solid;
+        border: 2px #207dd4 solid;
     }
 }
 .posts{
@@ -52,8 +59,10 @@
     padding: 1.5rem 2rem;
     flex-wrap: wrap;
     .post{
-        background-color: rgba($color: #FFFFFF, $alpha: 0.1);
+        background-color: rgba($color: #FFFFFF, $alpha: 0.4);
+        color: #000000;
         padding: 0.5rem 01rem;
+        backdrop-filter: blur(0.2rem);
         border-radius: 0.5rem;
         .post-title{
             font-size: 20px;
