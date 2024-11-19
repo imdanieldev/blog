@@ -1,5 +1,5 @@
 +++
-title = "PaaS و SaSS و IaaS"
+title = "PaaS و SaaS و IaaS"
 +++
 SaaS, PaaS, IaaS:
 
