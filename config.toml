@@ -1,4 +1,4 @@
-base_url = "/"
+base_url = "https://imdanieldev.github.io/blog"
 compile_sass = true
 theme = "mytheme"
 title = "وبلاگ دانیال"
